@@ -2,7 +2,7 @@
 * @Author: Windsor
 * @Date:   2017-09-18 18:55:41
 * @Last Modified by:   Windsor
-* @Last Modified time: 2017-09-20 16:54:37
+* @Last Modified time: 2017-09-20 17:21:48
 */
 window.onload = function(){
 	let circleBotton = document.getElementsByClassName('circle-botton')[0];
@@ -19,6 +19,9 @@ window.onload = function(){
 	let left = document.getElementsByClassName('banner-left')[0];
 	let right = document.getElementsByClassName('banner-right')[0];
 	/////////////////////////////////////////////////////////////
+	/*鼠标移入停止轮播
+	  鼠标移出开始轮播
+	*/
 	bannerbox.onmouseover = function(){
 		clearInterval(t);
 	}
@@ -34,6 +37,10 @@ window.onload = function(){
 		clearInterval(t);
 		move();
 	}*/
+	/*
+	点击左向左滑
+	点击右向右滑
+	 */
 	left.onclick = function(){
 		clearInterval(t);
 		if(!flag){
